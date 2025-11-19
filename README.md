@@ -1,6 +1,7 @@
 # CivicBot
 
 CivicBot is an intelligent automation bot designed to assist with civic tasks and digital automation.
+<img width="832" height="822" alt="Screenshot 2025-11-19 211532" src="https://github.com/user-attachments/assets/89f4aa7a-ad62-4f85-99cd-cce147925e72" />
 
 ## Prerequisites
 
