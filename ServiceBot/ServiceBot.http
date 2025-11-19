@@ -1,0 +1,6 @@
+@ServiceBot_HostAddress = http://localhost:5120
+
+GET {{ServiceBot_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
