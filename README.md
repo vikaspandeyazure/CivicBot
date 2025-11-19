@@ -30,19 +30,45 @@ CivicBot is an intelligent automation bot designed to assist with civic tasks an
      ```
 
 3. **Configure appsettings.json**
-
+ 
    - Create an `appsettings.json` file in the project root.
    - Add your configuration variables as required by the code; for example:
 
      ```json
-     {
-       "BotToken": "<your-bot-token>",
-       "DatabaseConnectionString": "<your-db-connection-string>",
-       "FFmpegPath": "ffmpeg/ffmpeg.exe",
-       "OtherConfigKey": "value"
-     }
+ {
+  "TelegramBotToken": "Your Bot father token",
+  "AzureOpenAIEndpoint": "",
+  "AzureOpenAIDeploymentName": "gpt-4o-mini",
+  "AzureOpenAIKey": "",
+  "AzureBlobStorageConnectionString": "",
+  "AzureBlobContainerName": "complaints",
+  "AzureCosmosDbConnectionString": "",
+  "AzureCosmosDbDatabaseName": "ComplaintsDb",
+  "AzureCosmosDbContainerName": "complaints",
+  "AzureSpeechServiceKey": "",
+  "AzureSpeechServiceRegion": "eastus",
+  "TenantId": "",
+  "FfmpegPath": "",
+  
+  "AzureVisionAIEndpoint": "",
+  "AzureVisionAIKey": "",
+  "AzureVisionAIApiVersion": "2023-05-01-preview",
+  "AzureOpenAIExtensionsApiVersion": "2023-07-01-preview",
+  "AzureVisionAIDeleteIndexAfterUse": "true",
+  
+  "ChatHistory": {
+    "MaxMessages": 6,
+    "SystemPrompt": "You are CivicBot, a friendly sanitation assistant.\n\n**Style:**\n- First message: Warm greeting + brief intro (2-3 sentences)\n- Gathering info: Brief and direct (1 sentence)\n- Confirmation: Show summary + ask yes/no\n- Don't repeat what user already told you\n\n**Topics:** Garbage, waste, drains, sewage, odors, pests.\n\n**Rules:**\n- Welcome users naturally on first contact\n- Ask for missing details only: location, urgency, duration\n- Off-topic: Politely redirect\n- Never create tickets without confirmation"
+  },
+  
+  "Ticketing": {
+    "SessionExpiryMinutes": 30
+  }
+}
+
+
      ```
-   - **Note**: The above keys are examples. Please refer to your project code for specific required keys and their usage.
+   - **Note**: The above are actual examples. Please refer to your project code for specific required keys and their usage.
 
 4. **Build the Project**
 
